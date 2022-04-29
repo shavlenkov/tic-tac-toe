@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cross-Zero</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="container" style="background: linear-gradient(#ffb300, #ff4000)">
+
+    <div id="message">Ход крестика</div>
+
+<div class="area">
+    <div class="row1">
+        <div onclick="clickOnBlock(this)" class="block" id="0-0"></div>
+        <div onclick="clickOnBlock(this)" class="block"  id="0-1"></div>
+        <div onclick="clickOnBlock(this)" class="block"  id="0-2"></div>
+    </div>
+
+    <div class="row2">
+        <div onclick="clickOnBlock(this)" class="block"  id="1-0"></div>
+        <div onclick="clickOnBlock(this)" class="block"  id="1-1"></div>
+        <div onclick="clickOnBlock(this)" class="block"  id="1-2"></div>
+    </div>
+
+    <div class="row3">
+        <div onclick="clickOnBlock(this)" class="block"  id="2-0"></div>
+        <div onclick="clickOnBlock(this)" class="block"  id="2-1"></div>
+        <div onclick="clickOnBlock(this)"  class="block"  id="2-2"></div>
+    </div>
+</div>
+
+</div>
+
+<div id="popup-black" style="display: none">
+    <div class="popup">
+        <h2 style="font-family: Arial" align="center" id="winner"></h2>
+        <hr>
+        <button style="margin-left: 120px;" id="refresh">Начать заново</button>
+    </div>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
